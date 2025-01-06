@@ -1,0 +1,17 @@
+<h1>Top 10 Días con Más Ventas</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Total de Ventas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @top_days.each do |day| %>
+      <tr>
+        <td><%= day.date %></td>
+        <td><%= day.count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -38,7 +38,11 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem "letter_opener"
 end
 
-gem 'rack-cors'
-
+gem "rack-cors"
+gem "sidekiq"
+gem "whenever", require: false
+gem "redis"
+gem "redis-rails"
